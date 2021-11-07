@@ -1,0 +1,62 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.text {
+    line-height: 20px;
+}
+
+.title {
+    padding-top: 10px;
+    margin-bottom: auto;
+    font-size: 50px;
+    color: #300a24;
+    width: 100%;
+    border-bottom: 2px solid #000;
+    text-align: center;
+    padding-bottom: 10px;
+    background: brown;
+}
+
+.buttons {
+    width: 100vw;
+    display: flex;
+    flex-shrink: 1;
+    gap: 10px;
+    justify-content: center;
+}
+
+.button {
+    width: 120px;
+    height: 50px;
+    border-radius: 30px;
+    border: 1px solid #000;
+    font-size: 25px;
+    text-align: center;
+}
+
+.rock {
+    background: #5a4d41;
+    color: #A5B2F5;
+}
+
+.paper {
+    background: #e0c9a6;
+    color: #1F3680;
+}
+
+.scissors {
+    background: #ddd;
+    color: #660;
+}
+
+.result {
+    width: 100vw;
+    height: 80vh;
+    background-image: url("background.jpg");
+    background-repeat: round;
+    text-align: center;
+}
