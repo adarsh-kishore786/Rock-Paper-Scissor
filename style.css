@@ -3,10 +3,7 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-}
-
-.text {
-    line-height: 20px;
+    background: #300A48;
 }
 
 .title {
@@ -38,6 +35,16 @@
     text-align: center;
 }
 
+.button:hover {
+    text-shadow: 0 0 2px #fff;
+    transform: scale(1.1);
+}
+
+.button:active {
+    text-shadow: 0 0 2px #000;
+    transform: scale(0.9);
+}
+
 .rock {
     background: #5a4d41;
     color: #A5B2F5;
@@ -58,5 +65,23 @@
     height: 80vh;
     background-image: url("background.jpg");
     background-repeat: round;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    padding-top: 30px;
+}
+
+.user {
+    padding-right: auto;
+    margin-left: 20px;
+}
+
+.computer {
+    padding-left: auto;
+    margin-right: 20px;
+}
+
+.border {
+    height: 30px;
+    background: #345FB0;
 }

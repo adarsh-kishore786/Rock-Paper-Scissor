@@ -35,17 +35,17 @@ function play(event) {
     let userInput = capitalize(event.target.name);
     let str = logic(userInput, compInput);
 
+    let user = document.querySelector(".user");
+    user.innerText = "";
+    user.innerText += `User selected ${userInput}!`;
 
-    let div = document.querySelector(".result");
-    let p = document.querySelector("p");
-    if (!p) p = document.createElement("p");
-    p.innerHTML = "";
-    p.innerHTML += `User selected ${userInput}!`;
-    p.innerHTML += `<br />Computer selected ${compInput}!`;
-    p.innerHTML += `<br />${str}`;
-    p.classList.add("text");
+    let final = document.querySelector(".final");
+    final.innerText = "";
+    final.innerText += `${str}`;
 
-    div.append(p);
+    let computer = document.querySelector(".computer");
+    computer.innerText = "";
+    computer.innerText += `Computer selected ${compInput}!`;
 }
 
 let buttons = document.querySelectorAll(".button");
